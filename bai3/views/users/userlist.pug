@@ -1,0 +1,7 @@
+form(action='/users/search' menthod='GET')
+	input(id = 'name' type='text' name='q' value = q)
+	button(type='submit') Search
+
+ul
+	each user in users
+		li= user.name
