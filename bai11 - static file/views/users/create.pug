@@ -1,0 +1,7 @@
+extends ../../template/common
+
+block content
+	form(action='/users/create', method='POST')
+		label ten
+		input(type='text', name='name')
+		button(type='submit' class="btn btn-primary") Create 
