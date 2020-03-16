@@ -3,7 +3,7 @@ const shortId = require('shortid');
 
 
 module.exports.userlist = (req,res)=>{
-	console.log(db.get("users").value);
+	//console.log(db.get("users").value);
 	res.render('users/userlist.pug',{users : db.get("users").value()});
 };
 

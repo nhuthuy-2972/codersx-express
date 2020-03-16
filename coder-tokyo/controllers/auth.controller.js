@@ -29,7 +29,7 @@ module.exports.checkAuth = (req,res)=>{
 			values : req.body
 		})
 		return;	
-	}
-	res.cookie('userId',user.id);
+	} 
+	res.cookie('userId',user.id,{signed : true});
 	res.redirect('/users');
 };
