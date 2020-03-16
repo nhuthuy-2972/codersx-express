@@ -3,7 +3,9 @@
     {
       "name": "gia mong",
       "phone": "0392597878",
-      "id": "5VLuhdNT"
+      "id": "5VLuhdNT",
+      "email": "nhuthuy2972@gmail.com",
+      "password": "123456"
     },
     {
       "name": "nhut huy",
@@ -23,7 +25,9 @@
     {
       "name": "Vuong Gia Mong ",
       "phone": "0392597878",
-      "id": "4-6EevVA"
+      "id": "4-6EevVA",
+      "email": "giamong2408@gmail.com",
+      "password": "123456"
     }
   ]
 }
