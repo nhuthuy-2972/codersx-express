@@ -1,0 +1,23 @@
+extends ../../template/common
+
+
+block content
+	h1 Users
+	.d-flex.mb-5
+		a.btn.btn-primary(href='/users/create') new user
+
+		form.ml-auto(action='/users/search' menthod='GET')
+			input(id = 'name' type='text' name='q' value = q ? q : "")
+			button(type='submit') Search
+
+	table.table
+		tr
+			th Name
+			th Phone
+			th Action
+		each user in users
+			tr
+				td= user.name
+				td= user.phone
+				td
+					a.btn.btn-info(href='/users/' + user.id) View
