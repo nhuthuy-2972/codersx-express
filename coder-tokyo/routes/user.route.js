@@ -5,6 +5,11 @@ const validateUser = require('../validate/user.validate');
 
 router.get('/',userController.userlist);
 
+router.get('/cookie',(req,res,next)=>{
+	res.cookie('userid',"12345");
+	res.send("Hello cookie");
+});
+
 router.get('/search',userController.search);
 
 router.get('/create',userController.create);
@@ -13,6 +18,8 @@ router.get('/:id',userController.view);
 
 
 router.post('/create',validateUser.postCreate ,userController.postCreate);
+
+
 
 
 module.exports = router;
