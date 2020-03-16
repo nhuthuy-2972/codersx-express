@@ -1,3 +1,4 @@
+const md5 = require('md5');
 const db = require("../db");
 
 
@@ -19,7 +20,7 @@ module.exports.checkAuth = (req,res)=>{
 		return;
 	}
 	
-	var password = req.body.password;
+	var password = md5(req.body.password);
 
 	if(password !== user.password)
 	{
