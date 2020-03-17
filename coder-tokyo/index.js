@@ -10,6 +10,7 @@ const authRoute = require('./routes/auth.route');
 const authMiddleware = require('./middleware/auth.middleware');
 const productRoute = require('./routes/product.route');
 
+
 app.engine('pug',require('pug').__express);
 app.set('view engine','pug');
 app.set('views','./views');
