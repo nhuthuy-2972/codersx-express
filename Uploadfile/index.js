@@ -3,6 +3,9 @@ console.log(process.env.SESSION_SECRECT);
 const express = require('express');
 const app = express();
 const port = 3000;
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost/express-demo");
+
 const bodyParser = require('body-parser');
 const userRoute = require('./routes/user.route');
 const cookieParser = require("cookie-parser");
