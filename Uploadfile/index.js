@@ -28,7 +28,7 @@ app.get('/',(req,res)=>{
 });
 
 
-
+//app.use('/users',userRoute);
 app.use('/users',authMiddleware.checkcookie,userRoute);
 app.use('/auth',authRoute);
 app.use('/product',productRoute);
